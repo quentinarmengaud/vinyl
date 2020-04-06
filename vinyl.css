@@ -1,0 +1,136 @@
+.vinyl {
+  position: relative;
+  background: #EFF0D1;
+  margin: 150px auto;
+  height: 250px;
+  width: 450px;
+  border-radius: 5px;
+  box-shadow: inset 0px 50px 0 0px #EFF0D1; }
+
+.vinyl::before {
+  content: '';
+  background: #000;
+  position: absolute;
+  top: 110px;
+  left: 110px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0 40px #ff6300, 0 0 0 45px #000, 0 0 0 55px #000, 0 0 0 56px #333333, 0 0 0 60px #000, 0 0 0 61px #333333, 0 0 0 65px #000, 0 0 0 66px #333333, 0 0 0 70px #000, 0 0 0 71px #333333, 0 0 0 75px #000, 0 0 0 76px #333333, 0 0 0 80px #000, 0 0 0 81px #333333, 0 0 0 85px #000, 0 0 0 86px #333333, 0 0 0 90px #000, 0 0 0 91px #333333, 0 0 0 95px #000, 0 0 0 96px #333333,     0 0 0 100px #000, 0 0 0 101px #333333, 0 0 0 105px #000, 0 0 0 106px #333333,         0 0 0 110px #000, 0 0 0 111px #333333, 0 0 0 115px #000, 0 0 0 116px #333333,             0 0 0 120px #000, 0 0 0 121px #333333, 0 0 0 125px #000, 0 0 0 126px #333333,                 0 0 0 120px #000, 0 0 0 121px #333333, 0 0 0 125px #000, 0 0 0 126px #333333,             0 0 0 130px #000, 0 0 0 131px #333333, 0 0 0 135px #000, 0 0 0 136px #333333,             0 0 0 140px #000, 0 0 0 141px #333333, 0 0 0 150px #000000; }
+
+.vinyl span:nth-child(1),
+.vinyl span:nth-child(2),
+.vinyl span:nth-child(3) {
+  position: absolute;
+  margin: auto;
+  top: -45px;
+  left: -45px;
+  height: 330px;
+  width: 330px;
+  display: block; }
+  .vinyl span:nth-child(1)::before,
+  .vinyl span:nth-child(2)::before,
+  .vinyl span:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    animation: rotate 1.8s linear infinite;
+    top: 150px;
+    left: 153px;
+    transform-origin: top;
+    margin-top: 15px;
+    padding-top: 20px; }
+  .vinyl span:nth-child(1)::after,
+  .vinyl span:nth-child(2)::after,
+  .vinyl span:nth-child(3)::after {
+    content: '';
+    width: 210px;
+    height: 220px;
+    border-radius: 50%;
+    position: absolute;
+    border: 5px solid #77665C;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    opacity: 0.2;
+    animation: rotate 1.8s linear infinite; }
+.vinyl span:nth-child(3)::before {
+  content: '404'; }
+.vinyl span:nth-child(2)::after {
+  width: 260px;
+  height: 250px; }
+.vinyl span:nth-child(3)::after {
+  width: 270px;
+  height: 280px; }
+.vinyl span:nth-child(4) {
+  background: #000;
+  position: absolute;
+  margin: auto;
+  top: 40px;
+  left: 120px;
+  height: 10px;
+  width: 230px;
+  display: block;
+  transform: rotate(-25deg);
+  animation: rotateArm 2s linear infinite;
+  transform-origin: top right; }
+  .vinyl span:nth-child(4)::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    height: 10px;
+    width: 20px;
+    background: #ca0303; }
+  .vinyl span:nth-child(4)::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    height: 25px;
+    width: 50px;
+    background: #000;
+    right: -10px; }
+.vinyl span:nth-child(5) {
+  background: #333;
+  position: absolute;
+  margin: auto;
+  top: 210px;
+  right: 20px;
+  height: 2px;
+  width: 150px;
+  display: block; }
+  .vinyl span:nth-child(5)::before {
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 2px;
+    background: #000;
+    box-shadow: 0px 0px 0 10px #ff6300;
+    top: -6px;
+    right: 40px;
+    animation: toggleVolume 1.8s linear infinite; }
+  .vinyl span:nth-child(5)::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    background: blue;
+    top: -120px;
+    right: 0px;
+    border-radius: 50%;
+    box-shadow: -15px 35px 0 3px #000, -30px 35px 0 3px #000, -45px 35px 0 3px #000, -60px 35px 0 3px #000, -75px 35px 0 3px #000, -15px 50px 0 3px #000, -30px 50px 0 3px #000, -45px 50px 0 3px #000, -60px 50px 0 3px #000, -75px 50px 0 3px #000, -15px 65px 0 3px #000, -30px 65px 0 3px #000, -45px 65px 0 3px #000, -60px 65px 0 3px #000, -75px 65px 0 3px #000, -15px 80px 0 3px #000, -30px 80px 0 3px #000, -45px 80px 0 3px #000, -60px 80px 0 3px #000, -75px 80px 0 3px #000; }
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg); } }
+@keyframes rotateArm {
+  50% {
+    transform: rotate(-30deg); } }
+@keyframes toggleVolume {
+  50% {
+    right: 60px; } }
+
+/*# sourceMappingURL=vinyl.css.map */
